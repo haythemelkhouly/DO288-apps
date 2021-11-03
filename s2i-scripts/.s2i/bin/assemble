@@ -9,7 +9,9 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
-
+#cp -Rf /tmp/src/*.html ./
+#DATE='date "+%F"'
+#echo "$DATE astra" >> ./info.html
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 
@@ -38,5 +40,4 @@ else
   fi
 fi
 
-# Fix source directory permissions
-fix-permissions ./
+# Fix source directory permissions"fix-permissions ./
