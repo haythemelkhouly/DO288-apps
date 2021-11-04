@@ -14,7 +14,7 @@ config_s2i
 #echo "$DATE astra" >> ./info.html
 
 cp -Rf /tmp/src/*html ./
-DATE='date "+%F"'
+DATE=$(date "+%F")
 echo "${DATE} Astra..." > ./infos.html
 
 #echo "---> Installing application source"
