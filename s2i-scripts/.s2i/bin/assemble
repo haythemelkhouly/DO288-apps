@@ -12,15 +12,20 @@ config_s2i
 #cp -Rf /tmp/src/*.html ./
 #DATE='date "+%F"'
 #echo "$DATE astra" >> ./info.html
-echo "---> Installing application source"
-cp -Rf /tmp/src/*.html ./
+
+cp -Rf /tmp/src/*html ./
+DATE='date "+%F"'
+echo "${DATE} Astra..." > ./infos.html
+
+#echo "---> Installing application source"
+#cp -Rf /tmp/src/*.html ./
 
 #DATE=`date "+%b %d, %Y @ %H:%M %p"`
-DATE='date "+%F"'
+#DATE='date "+%F"'
 
-echo "---> Creating info page"
-echo "Amios $DATE" >> ./info.html
-echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
+#echo "---> Creating info page"
+#echo "Amios $DATE" >> ./info.html
+#echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
